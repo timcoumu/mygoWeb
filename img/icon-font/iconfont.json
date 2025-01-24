@@ -1,0 +1,16 @@
+{
+  "id": "4816243",
+  "name": "mygoPro",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5475530",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <div class="box">
+        <img src="./img/soyo-crychic.png" alt="">
+        <span>404 Not Found</span>
+        <div class="soyo"></div>
+    </div>
+</body>
+<style>
+    .box{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+    span{
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+    }
+    .soyo{
+        cursor:grabbing;
+        user-select: none;
+        width: 100px;
+        height: 30%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: rotate(-50deg);
+        background-color: transparent;
+    }
+</style>
+<script src="./js/404.js"></script>
+</html>

@@ -1,0 +1,24 @@
+.bottom{
+    height: 5%;
+    display: flex;
+    /* background-color: blanchedalmond; */
+    transition: none !important;
+}
+.bottom ul{
+    display: flex;
+}
+.bottom span{
+    color: white;
+    font-size: 12px;
+    padding: 0 10px;
+    user-select: none;
+}
+.bottom a{
+    color: white;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.bottom a:hover{
+    color: white;
+    text-decoration: underline;
+}

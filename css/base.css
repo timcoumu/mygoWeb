@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: all .5s;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.w {
+    width: 92%;
+    margin: 0 auto;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

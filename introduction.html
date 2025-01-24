@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>剧情</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="./img/icon-font/iconfont.js"></script>
+    <link rel="stylesheet" href="./img/icon-font/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+
+<body>
+    <div class="background">
+
+    </div>
+    <div class="top">
+        <div class="top-logo">
+            <img src="./img/logo.svg" alt="">
+        </div>
+        <div class="top-nav">
+            <div class="nav-menu">
+                <i class="iconfont icon-caidan"></i>
+            </div>
+            <ul>
+                <li><a href="./home.html">首页</a></li>
+                <li><a href="#">简介</a></li>
+                <li><a href="./character.html">角色</a></li>
+                <li><a href="./music.html">音乐</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="middle w">
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/It's_MyGO_KV.webp">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/It's_MyGO_KV2.webp">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>《BanG Dream! It's MyGO!!!!!》（bilibili方面译名：《迷途之子!!!!!》）是少女乐团企划《BanG Dream!》旗下由三次元制作的，以MyGO!!!!!为主角的TV动画。
+            </p>
+            <p>本动画的放送决定于2023年4月9日举办的MyGO!!!!! 4th LIVE“前へ進む音の中で”中公布，5月24日公布的PV中正式确认动画的时间线为GBP世界观的Season
+                3（第三年）春末。于2023年6月29日播出第1~3话，2023年7月6日起从第4话开始每周四播出1话。</p>
+            <p>2024年1月6日，在“Bushiroad新春大発表会2024”上宣布剧场版动画于2024年上映，分为上下两篇：《剧场版 BanG Dream! It's MyGO!!!!! 前篇
+                春日向阳，迷途野猫》（日语：BanG Dream! It's MyGO!!!!! 前編 : 春の陽だまり、迷い猫）为要乐奈相关新剧情+TV动画前半内容再编集，于2024年9月27日上映；《剧场版 BanG
+                Dream! It's MyGO!!!!! 后篇 歌唱着，由我们所作的歌 & FILM LIVE》（（日语：BanG Dream! It's MyGO!!!!! 後編 : うたう、僕らになれるうた &
+                FILM LIVE）为TV动画后半内容再编集+新作FILM LIVE，于2024年11月8日上映。</p>
+        </div>
+    </div>
+    <div class="bottom w center">
+        <ul>
+            <li><span>相关链接：</span></li>
+            <li><a href="./404.html">Crychic</a></li>
+            <li><a href="./avemujica.html">Ave Mujica</a></li>
+            <li><a href="https://space.bilibili.com/1459104794">Bilibili</a></li>
+        </ul>
+    </div>
+</body>
+<style>
+    .background {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: url(./img/It\'s_MyGO_P2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: -10;
+        opacity: .5;
+    }
+
+    .background::after {
+        content: "";
+        background: url(./img/icon_mark.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        position: fixed;
+        right: 0;
+        top: 20%;
+        width: 50%;
+        height: 50%;
+        opacity: .5;
+    }
+
+    .middle {
+        position: relative;
+        height: 100%;
+        position: relative;
+        z-index: -10;
+    }
+    .middle .container {
+        background-color: #3388BB;
+        width: 50%;
+        height: 80%;
+        position: fixed;
+        left: 0;
+    }
+
+    .middle .swiper-container {
+        width: 85%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .middle .text {
+        font-family: FangSong;
+        height: 80% !important;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 45%;
+        position: absolute;
+        right: 0;
+        z-index: -10;
+    }
+
+    .text p {
+        color: #194b6a;
+        font-weight: bolder;
+        font-size: 24px;
+
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-pagination-progressbar{
+        background:#3388BB !important;
+    }
+    
+
+</style>
+<script src="./js/swiper-3.4.2.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        el: '.swiper-pagination',
+        direction: 'horizontal',
+        loop: true,
+        autoplay: 2000,
+        speed: 300,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationType: 'progress',
+        effect: 'fade',
+    })        
+</script>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>剧情</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="./img/icon-font/iconfont.js"></script>
+    <link rel="stylesheet" href="./img/icon-font/iconfont.css">
+</head>
+<body>
+    <div class="background">
+        
+    </div>
+    <div class="top">
+        <div class="top-logo">
+            <img src="./img/logo.svg" alt="">
+        </div>
+        <div class="top-nav">
+            <div class="nav-menu">
+                <i class="iconfont icon-caidan"></i>
+            </div>
+            <ul>
+                <li><a href="./home.html">首页</a></li>
+                <li><a href="./introduction.html">简介</a></li>
+                <li><a href="./character.html">角色</a></li>
+                <li><a href="#">音乐</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="middle w">
+        <ul>
+            <li>
+                <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=50px src="//music.163.com/outchain/player?type=2&id=2097485070&auto=1&height=32"></embed>
+            </li>
+            <li>
+                <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=50px src="//music.163.com/outchain/player?type=2&id=2097486092&auto=1&height=32"></embed>
+            </li>
+            <li>
+                <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=50px src="//music.163.com/outchain/player?type=2&id=2097485072&auto=1&height=32"></embed>
+            </li>
+            <li>
+                <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=50px src="//music.163.com/outchain/player?type=2&id=2097485073&auto=1&height=32"></embed>
+            </li>
+            <li>
+                <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=50px src="//music.163.com/outchain/player?type=2&id=2097485076&auto=1&height=32"></embed>
+            </li>
+            <li>
+                <p><a href="https://music.163.com/#/artist?id=54743836">更多...</a></p>
+            </li>
+       </ul>
+    </div>
+    <div class="bottom w center">
+        <ul>
+            <li><span>相关链接：</span></li>
+            <li><a href="./404.html">Crychic</a></li>
+            <li><a href="./avemujica.html">Ave Mujica</a></li>
+            <li><a href="https://space.bilibili.com/1459104794">Bilibili</a></li>
+        </ul>
+    </div>
+</body>
+<style>
+    .background {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: url(./img/It\'s_MyGO_P2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: -10;
+        opacity: .5;
+    }
+    .background::after {
+        content: "";
+        background: url(./img/icon_mark.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        position: fixed;
+        right: 0;
+        top: 20%;
+        width: 50%;
+        height: 50%;
+        opacity: .5;
+    }
+    .middle{
+        
+        height: 100%;
+    }
+    .middle li{
+        height: 60px;
+    }
+    .middle p{
+        padding: 0 10px;
+    }
+    .middle a{
+        font-family: FangSong;
+        font-weight: bolder;
+        color: #194b6a;
+    }
+</style>
+</html>
